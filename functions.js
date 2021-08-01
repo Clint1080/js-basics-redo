@@ -33,8 +33,12 @@ console.log(greaterThanFive(3))
   If the name does not begin with Z, return the string: 'the name does not begin with Z'.
 */
 
-//CODE HERE
-
+function findZWords(word){
+  if(word.startsWith((`Z`))) {
+    return `The name begins with Z`
+  } return `The name does not begin with Z`
+}
+console.log(findZWords(`Zathura`))
 //////////////////PROBLEM 4////////////////////
 /*
   Create a function called 'iLove' that takes in two string parameters, 'name' and 'love'. 
@@ -42,4 +46,4 @@ console.log(greaterThanFive(3))
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
-//CODE HERE
+
