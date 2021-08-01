@@ -46,4 +46,8 @@ console.log(findZWords(`Zathura`))
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
+function iLove(name, love) {
+  return `${name} loves ${love}`  
+}
 
+console.log(iLove(`Joseph`, `music`))
