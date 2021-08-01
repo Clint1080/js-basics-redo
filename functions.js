@@ -5,8 +5,10 @@
   The function should return the sum of the two parameters.
 */
 
-//CODE HERE
-
+function sum(num1, num2){
+  return num1 + num2
+}
+// console.log(sum(10,22))
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -16,7 +18,12 @@
   If it's not, return a false boolean.
 */
 
-//CODE HERE
+function greaterThanFive(number) {
+  if(number > 5){
+    return true
+  } return false
+}
+console.log(greaterThanFive(3))
 
 //////////////////PROBLEM 3////////////////////
 /*
