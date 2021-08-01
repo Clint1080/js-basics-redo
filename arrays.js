@@ -35,4 +35,30 @@ console.log(middleNums)
   Return the answers array inside of the function.
 */
 
-// CODE HERE
+function bigOrSmall(arr){
+  let answers = []
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 100 ){
+      answers.push(`Big`)
+    } else {
+      answers.push(`Small`)
+    }
+  }
+  return answers
+}
+
+console.log(bigOrSmall([1, 200, 300, 1 ,4,5, 600]));
+
+
+const bigOrSmall2 = (arr) => {
+  let answers2 = []  // used let here because answers it can change
+  for(let i = 0; i < arr.length; i++) {
+    if(arr[i] > 100) {
+      answers2.push(`Big`)
+    } else { 
+      answers2.push(`Small`)
+    }
+  }
+  return answers2
+}
+console.log(bigOrSmall2([101, 23, 600, 45, 167]))
