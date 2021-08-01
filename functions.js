@@ -8,7 +8,11 @@
 function sum(num1, num2){
   return num1 + num2
 }
-// console.log(sum(10,22))
+const sum2 = (num1, num2) => {
+  return num1 + num2
+}
+console.log(sum(10,22))
+console.log(sum2(10,22))
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -23,7 +27,14 @@ function greaterThanFive(number) {
     return true
   } return false
 }
+const greaterThanFive2 = (number) => {
+  if(number > 5) {
+    return true
+  } return false
+}
 console.log(greaterThanFive(3))
+console.log(greaterThanFive2(6))
+
 
 //////////////////PROBLEM 3////////////////////
 /*
@@ -46,8 +57,13 @@ console.log(findZWords(`Zathura`))
   "NAMEPARAM loves LOVEPARAM" with the appropriate parameters in the string. e.g. "Joseph loves music"
 */
 
+// Did both ways so can learn
 function iLove(name, love) {
   return `${name} loves ${love}`  
 }
+const ilove2 = (name, love) => {
+  return `${name} loves ${love}`
+}
 
 console.log(iLove(`Joseph`, `music`))
+console.log(ilove2(`Joseph`, `music`))
