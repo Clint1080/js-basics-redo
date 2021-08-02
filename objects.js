@@ -14,10 +14,16 @@
   For example: 'Hello! My name is Rubber Duck and I live in Utah"
 */
 
-//CODE HERE
+const me = {
+  firstName : `Clint`,
+  state: `Utah`,
+  age: 35,
+  greeter: function() {
+    return `Hello! My name is ${this.firstName} and I live in ${this.state}`
+  }
+}
 
-
-
+console.log(me.greeter())
 
 
 //////////////////PROBLEM 2////////////////////
