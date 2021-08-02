@@ -50,4 +50,18 @@ console.log(me.greeter())
   }
 */
 
-//CODE HERE
+const carFactory = (make, model, year) => {
+  let car = {
+    make: make,
+    model: model, 
+    year: year 
+  }
+  if(car.year > 2018) {
+    car.isNew = true
+  } else {
+    car.isNew = false
+  }
+  return car
+}
+
+console.log(carFactory(`Nissan`, `Altima`, 2005))
